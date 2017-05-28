@@ -23,6 +23,10 @@ a.delete {
     width: 200px;
 }
 
+.table .projects-last-update {
+    width: 140px;
+}
+
 .table .projects-actions {
     width: 160px;
 }
