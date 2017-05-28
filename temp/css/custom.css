@@ -28,5 +28,28 @@ a.delete {
 }
 
 .table .projects-actions {
-    width: 160px;
+    width: 124px;
+}
+
+/* Fix to panel headings so it can accomodate buttons */
+.panel-title {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 16px;
+    color: inherit;
+    line-height: 16px;
+}
+
+.panel-action {
+    margin-left: 1em;
+}
+
+p.reply {
+    border-bottom: 1px solid #ddd;
+    margin-top: -0.5em;
+    padding-bottom: 1.75em;
+}
+
+.glyphicon-reply {
+    transform: scaleX(-1);
 }
