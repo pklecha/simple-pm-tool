@@ -1,0 +1,28 @@
+.main-content {
+    margin-top: 50px;
+}
+
+a.delete {
+    color: #c9302c !important;
+    font-weight: bold !important;
+}
+
+.table .projects-id {
+    text-align: right;
+    width: 20px;
+}
+
+.table .projects-name {
+}
+
+.table .projects-status {
+    width: 140px;
+}
+
+.table .projects-assigned {
+    width: 200px;
+}
+
+.table .projects-actions {
+    width: 160px;
+}
