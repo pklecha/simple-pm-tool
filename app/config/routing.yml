@@ -1,0 +1,6 @@
+pm_tool:
+    resource: "@PMToolBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+
