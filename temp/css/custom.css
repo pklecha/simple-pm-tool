@@ -8,9 +8,9 @@ a.delete {
     font-weight: bold !important;
 }
 
-.table .projects-id {
-    text-align: right;
-    width: 20px;
+.table .table-id {
+    /*text-align: right;*/
+    width: 12px;
 }
 
 .table .projects-name {
@@ -30,6 +30,14 @@ a.delete {
 
 .table .projects-actions {
     width: 124px;
+}
+
+.table .files-actions {
+    width: 100px;
+}
+
+.table .people-actions {
+    width: 110px;
 }
 
 /* Fix to panel headings so it can accomodate buttons */
