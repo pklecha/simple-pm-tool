@@ -12,6 +12,6 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('PMToolBundle:Default:index.html.twig');
+        return $this->render(':default:projects.html.twig');
     }
 }

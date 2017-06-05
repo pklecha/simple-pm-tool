@@ -1,0 +1,308 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="col-xs-12">
+        <h1>Projects</h1>
+        <table class="table table-striped dataTable no-footer projects-table">
+            <thead>
+            <th class="table-id">#</th>
+            <th class="projects-name">Project Name</th>
+            <th class="projects-assigned">Assigned</th>
+            <th class="projects-last-update">Last update</th>
+            <th class="projects-status">Status</th>
+            <th class="projects-actions">Actions</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="table-id">1</td>
+                <td>Project One</td>
+                <td>Pawel Klecha</td>
+                <td>2d ago</td>
+                <td>New</td>
+                <td>
+                    <!-- Project actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Project details</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Assign person</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#changeStatusModal">Change status</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#addNoteModal">Add note</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">2</td>
+                <td>Project Two</td>
+                <td>Chuck Norris</td>
+                <td>30m ago</td>
+                <td>In progress</td>
+                <td>
+                    <!-- Project actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Project details</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Assign person</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#changeStatusModal">Change status</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#addNoteModal">Add note</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">3</td>
+                <td>Project Three</td>
+                <td>Chuck Norris, Arnold Schwarzenegger</td>
+                <td>1d ago</td>
+                <td>In progress</td>
+                <td>
+                    <!-- Project actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Project details</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Assign person</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#changeStatusModal">Change status</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#addNoteModal">Add note</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">4</td>
+                <td>Project Four</td>
+                <td><span class="text-muted">Unassigned</span></td>
+                <td>2d ago</td>
+                <td>New</td>
+                <td>
+                    <!-- Project actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Project details</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Assign person</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#changeStatusModal">Change status</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#addNoteModal">Add note</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">5</td>
+                <td>Project Five</td>
+                <td>Steven Seagal</td>
+                <td>2w ago</td>
+                <td>Cancelled</td>
+                <td>
+                    <!-- Project actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Project details</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Assign person</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#changeStatusModal">Change status</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#addNoteModal">Add note</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">6</td>
+                <td>Project Six</td>
+                <td>Steven Seagal</td>
+                <td>2w ago</td>
+                <td>Cancelled</td>
+                <td>
+                    <!-- Project actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Project details</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Assign person</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#changeStatusModal">Change status</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#addNoteModal">Add note</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">7</td>
+                <td>Project Seven</td>
+                <td>Steven Seagal</td>
+                <td>2w ago</td>
+                <td>Cancelled</td>
+                <td>
+                    <!-- Project actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Project details</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Assign person</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#changeStatusModal">Change status</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#addNoteModal">Add note</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">8</td>
+                <td>Project Eight</td>
+                <td>Steven Seagal</td>
+                <td>2w ago</td>
+                <td>Cancelled</td>
+                <td>
+                    <!-- Project actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Project details</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Assign person</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#changeStatusModal">Change status</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#addNoteModal">Add note</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">9</td>
+                <td>Project Nine</td>
+                <td>Steven Seagal</td>
+                <td>2w ago</td>
+                <td>Cancelled</td>
+                <td>
+                    <!-- Project actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Project details</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Assign person</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#changeStatusModal">Change status</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#addNoteModal">Add note</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">10</td>
+                <td>Project Ten</td>
+                <td>Steven Seagal</td>
+                <td>2w ago</td>
+                <td>Cancelled</td>
+                <td>
+                    <!-- Project actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Project details</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Assign person</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#changeStatusModal">Change status</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#addNoteModal">Add note</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">11</td>
+                <td>Project Elevent</td>
+                <td>Steven Seagal</td>
+                <td>2w ago</td>
+                <td>Cancelled</td>
+                <td>
+                    <!-- Project actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Project details</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Assign person</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#changeStatusModal">Change status</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#addNoteModal">Add note</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">12</td>
+                <td>Project Twelve</td>
+                <td>Steven Seagal</td>
+                <td>2w ago</td>
+                <td>Cancelled</td>
+                <td>
+                    <!-- Project actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Project details</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Assign person</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#changeStatusModal">Change status</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#addNoteModal">Add note</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}

@@ -7,18 +7,16 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>{% block title %}{% endblock %}</title>
 
-    <!-- Bootstrap -->
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
-
     {% block stylesheets %}
-    <!-- Data Tables, https://datatables.net -->
-    <!--<link rel="stylesheet" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">-->
-    <link rel="stylesheet" href="//cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+        <!-- Bootstrap -->
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="css/custom.css">
+        <!-- Data Tables, https://datatables.net -->
+        <!--<link rel="stylesheet" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">-->
+        <link rel="stylesheet" href="//cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+
+        <!-- Custom styles -->
+        <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     {% endblock %}
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -30,9 +28,11 @@
 </head>
 <body>
 
-{% block topnav %}{% endblock %}
+{% block topnav %}
+    {% include 'topnav.html.twig' %}
+{% endblock %}
 
-<div class="container">
+<div class="container main-content">
     <div class="row">
         <!-- Row begin -->
         {% block content %}{% endblock %}
@@ -40,11 +40,14 @@
     </div>
 </div>
 
+{% block footer %}
+    {% include 'footer.html.twig' %}
+{% endblock %}
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
 
 {% block javascripts %}
     <!-- Data Tables, https://datatables.net -->
