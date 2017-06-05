@@ -1,0 +1,365 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="col-xs-12">
+        <h1>Files</h1>
+        <table class="table table-striped dataTable no-footer projects-table">
+            <thead>
+            <th class="table-id">#</th>
+            <th>Filename</th>
+            <th>Project</th>
+            <th>Size</th>
+            <th>Added on</th>
+            <th>Added by</th>
+            <th class="files-actions">Actions</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="table-id">1</td>
+                <td>Filename_1_project_AA.png</td>
+                <td>Project One</td>
+                <td>225.3 KB</td>
+                <td>May 29th, 2017, 10:45AM</td>
+                <td>Name Surname</td>
+                <td class="files-actions">
+                    <!-- File actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Download</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Go to project</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">2</td>
+                <td>Filename_2_project_AA.png</td>
+                <td>Project One</td>
+                <td>225.3 KB</td>
+                <td>May 29th, 2017, 10:45AM</td>
+                <td>Name Surname</td>
+                <td class="files-actions">
+                    <!-- File actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Download</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Go to project</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">3</td>
+                <td>Filename_1_project_AA.png</td>
+                <td>Project One</td>
+                <td>225.3 KB</td>
+                <td>May 29th, 2017, 10:45AM</td>
+                <td>Name Surname</td>
+                <td class="files-actions">
+                    <!-- File actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Download</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Go to project</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">4</td>
+                <td>Filename_1_project_AA.png</td>
+                <td>Project One</td>
+                <td>225.3 KB</td>
+                <td>May 29th, 2017, 10:45AM</td>
+                <td>Name Surname</td>
+                <td class="files-actions">
+                    <!-- File actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Download</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Go to project</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">5</td>
+                <td>Filename_1_project_AA.png</td>
+                <td>Project One</td>
+                <td>225.3 KB</td>
+                <td>May 29th, 2017, 10:45AM</td>
+                <td>Name Surname</td>
+                <td class="files-actions">
+                    <!-- File actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Download</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Go to project</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">6</td>
+                <td>Filename_1_project_AA.png</td>
+                <td>Project One</td>
+                <td>225.3 KB</td>
+                <td>May 29th, 2017, 10:45AM</td>
+                <td>Name Surname</td>
+                <td class="files-actions">
+                    <!-- File actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Download</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Go to project</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">7</td>
+                <td>Filename_1_project_AA.png</td>
+                <td>Project One</td>
+                <td>225.3 KB</td>
+                <td>May 29th, 2017, 10:45AM</td>
+                <td>Name Surname</td>
+                <td class="files-actions">
+                    <!-- File actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Download</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Go to project</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">8</td>
+                <td>Filename_1_project_AA.png</td>
+                <td>Project One</td>
+                <td>225.3 KB</td>
+                <td>May 29th, 2017, 10:45AM</td>
+                <td>Name Surname</td>
+                <td class="files-actions">
+                    <!-- File actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Download</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Go to project</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">9</td>
+                <td>Filename_1_project_AA.png</td>
+                <td>Project One</td>
+                <td>225.3 KB</td>
+                <td>May 29th, 2017, 10:45AM</td>
+                <td>Name Surname</td>
+                <td class="files-actions">
+                    <!-- File actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Download</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Go to project</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">10</td>
+                <td>Filename_1_project_AA.png</td>
+                <td>Project One</td>
+                <td>225.3 KB</td>
+                <td>May 29th, 2017, 10:45AM</td>
+                <td>Name Surname</td>
+                <td class="files-actions">
+                    <!-- File actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Download</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Go to project</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">11</td>
+                <td>Filename_1_project_AA.png</td>
+                <td>Project One</td>
+                <td>225.3 KB</td>
+                <td>May 29th, 2017, 10:45AM</td>
+                <td>Name Surname</td>
+                <td class="files-actions">
+                    <!-- File actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Download</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Go to project</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">12</td>
+                <td>Filename_1_project_AA.png</td>
+                <td>Project One</td>
+                <td>225.3 KB</td>
+                <td>May 29th, 2017, 10:45AM</td>
+                <td>Name Surname</td>
+                <td class="files-actions">
+                    <!-- File actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Download</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Go to project</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">13</td>
+                <td>Filename_1_project_AA.png</td>
+                <td>Project One</td>
+                <td>225.3 KB</td>
+                <td>May 29th, 2017, 10:45AM</td>
+                <td>Name Surname</td>
+                <td class="files-actions">
+                    <!-- File actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Download</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Go to project</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">14</td>
+                <td>Filename_1_project_AA.png</td>
+                <td>Project One</td>
+                <td>225.3 KB</td>
+                <td>May 29th, 2017, 10:45AM</td>
+                <td>Name Surname</td>
+                <td class="files-actions">
+                    <!-- File actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Download</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Go to project</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-id">15</td>
+                <td>Filename_1_project_AA.png</td>
+                <td>Project One</td>
+                <td>225.3 KB</td>
+                <td>May 29th, 2017, 10:45AM</td>
+                <td>Name Surname</td>
+                <td class="files-actions">
+                    <!-- File actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Download</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#assignPersonModal">Go to project</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

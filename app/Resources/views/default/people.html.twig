@@ -1,0 +1,67 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="col-xs-12">
+        <h1>People</h1>
+        <table class="table table-striped dataTable no-footer projects-table">
+            <thead>
+            <th class="table-id">#</th>
+            <th>Name</th>
+            <th class="people-actions">Actions</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Pawel Klecha</td>
+                <td>
+                    <!-- People actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Show profile</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>John Walker</td>
+                <td>
+                    <!-- People actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Show profile</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>James Smith</td>
+                <td>
+                    <!-- People actions buttons group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Show profile</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="delete" href="#" data-toggle="modal" data-target="#deleteProjectModal">Delete project</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

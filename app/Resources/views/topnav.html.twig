@@ -13,17 +13,17 @@
         {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#"><span class="glyphicon glyphicon-home"></span> Dashboard</a></li>
-                    <li class="active"><a href="#">Projects<span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">Files</a></li>
+                    <li><a href="{{ path('dashboard') }}"><span class="glyphicon glyphicon-home"></span> Dashboard</a></li>
+                    <li><a href="{{ path('projects') }}">Projects<span class="sr-only">(current)</span></a></li>
+                    <li><a href="{{ path('people') }}">People</a></li>
+                    <li><a href="{{ path('files') }}">Files</a></li>
                     <li><a href="#">Administration</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <p class="navbar-text">Hello, <strong>{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}</strong></p>
+                    <p class="navbar-text">Hello, <strong>{{ app.user.username }}</strong></p>
                     <li><a href="#">My Account</a></li>
-                    <li><a href="{{ path('fos_user_security_logout') }}">{{ 'layout.logout'|trans({}, 'FOSUserBundle') }}</a></li>
+                    <li><a href="{{ path('fos_user_security_logout') }}">Logout</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         {% else %}
