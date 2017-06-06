@@ -53,6 +53,12 @@
     <!-- Data Tables, https://datatables.net -->
     <script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
     <script src="//cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <!-- Bootstrap Modal Bundle -->
+    <script src="{{ asset('bundles/sideclickbootstrapmodal/js/sideclick-bootstrap-modal.js') }}"></script>
+    <div class="modal fade" id="emptyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-async data-target="#emptyModal">
+        <div class="modal-dialog">
+        </div>
+    </div>
     <!-- Custom scripts -->
     <script src="{{ asset('js/custom.js') }}"></script>
 {% endblock %}

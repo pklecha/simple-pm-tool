@@ -38,4 +38,28 @@ class DefaultController extends Controller
     {
         return $this->render(':default:files.html.twig');
     }
+
+    /**
+     * @Route("/example1", name="example1")
+     */
+    public function example1Action()
+    {
+        return $this->render(':default:example1.html.twig');
+    }
+
+    /**
+     * @Route("/example2", name="example2")
+     */
+    public function example2Action()
+    {
+        return $this->render(':default:example2.html.twig');
+    }
+
+    /**
+     * @Route("/example3", name="example3")
+     */
+    public function example3Action()
+    {
+        return $this->render(':default:example3.html.twig');
+    }
 }
